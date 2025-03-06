@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mena Hair Salon - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/images/logo.html" alt="Mena Hair Salon Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div id="greeting-banner">
+        <div class="container">
+            <p id="greeting-text">Welcome to Mena Hair Salon!</p>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>LET YOUR HAIR DO THE TALKING</h1>
+                <p>Your one-stop shop for premium humair hair, and hair services.</p>
+                <a href="services.html" class="btn">Explore Our Services</a>
+            </div>
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="images/p1.jpg" alt="Beautiful Wig designs" class="slide active">
+                    <img src="images/p11.jpg" alt="Human Hair Collection" class="slide">
+                    <img src="images/p2.jpg" alt="Braids" class="slide">
+            </div>
+            <div class="slider-controls/">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why shop from Mena Hair Salon?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas human hair bundles"></i>
+                    <h3>Premium hairs</h3>
+                    <p> Quality human hair bundles at an affordable price.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-curly wig cap"></i>
+                    <h3>Professional Design</h3>
+                    <p>Trending Custom made wig styles tailored to clients decription .</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-old wig"></i>
+                    <h3>Aftercare Support</h3>
+                    <p>Revamping services are offered to re-style clients old wigs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tip-section">
+        <div class="container">
+            <h2>Hair Tip of the Day</h2>
+            <p id="random-tip">Click below for a helpful hair tip!</p>
+            <button id="tip-button" class="btn">Get a Tip</button>
+        </div>
+    </section>
+
+    <div id="chatbot">
+        <div class="chatbot-header">
+            <h3>Mena Assistant</h3>
+            <button id="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chat-messages">
+            <div class="message bot">Hi there! How can I help with your Hair needs today?</div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chat-input" placeholder="Type your question...">
+            <button id="send-chat"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    
+    <div class="chat-toggle" id="chat-toggle">
+        <i class="fas fa-comment"></i>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mena Hair Salon. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/mena_hair_salon?igsh=dWxwaHdhMHJzODIx&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@mena6473?_t=ZM-8uP7oZNSFZW&_r=1"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mena Hair Salon - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/api/placeholder/150/80" alt="Mena Hair Salon Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div id="greeting-banner">
+        <div class="container">
+            <p id="greeting-text">Welcome to Mena Hair Salon!</p>
+        </div>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team of Professionals</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>How to Reach Us</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Visit Our shop</h3>
+                            <p>Borteyman SSNIT Flat, Accra-Ghana, GA-237-7316</p>
+                            <p>Open Mondays-saturdays: 9am - 6pm</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>(233) 0241167272</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>philomenacollins63@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="previous-messages">
+                        <h3>Your Previous Messages</h3>
+                        <div id="previous-messages-list">
+                            <p class="no-messages">No previous messages found.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name">
+                            <small class="error-message" id="name-error"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email address">
+                            <small class="error-message" id="email-error"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service of Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="hair">Hair Purchase</option>
+                                <option value="design">wig Designs</option>
+                                <option value="maintenance">Revamping</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <small class="error-message" id="service-error"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your hair needs"></textarea>
+                            <small class="error-message" id="message-error"></small>
+                        </div>
+                        <button type="submit" class="btn" id="submit-btn">Send Message</button>
+                    </form>
+                    <div id="form-success" class="form-success">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Thank you! Your message has been sent successfully.</p>
+                        <button class="btn" id="new-message-btn">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <img src="/api/placeholder/1000/400" alt="Map to Mena Hair Salon location" class="map-image">
+            </div>
+        </div>
+    </section>
+
+    <div id="chatbot">
+        <div class="chatbot-header">
+            <h3>Mena Assistant</h3>
+            <button id="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chat-messages">
+            <div class="message bot">Hi there! How can I help with your Hair needs today?</div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chat-input" placeholder="Type your question...">
+            <button id="send-chat"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    
+    <div class="chat-toggle" id="chat-toggle">
+        <i class="fas fa-comment"></i>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mena Hair Salon. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/mena_hair_salon?igsh=dWxwaHdhMHJzODIx&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@mena6473?_t=ZM-8uP7oZNSFZW&_r=1"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
